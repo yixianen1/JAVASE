@@ -1,4 +1,4 @@
-package com.demo01.object;
+package com.demo01.Object;
 /*
      Objects类里面的方法都是静态方法，避免空指针异常
      Objects类中的equals方法

@@ -1,4 +1,4 @@
-package com.demo01.object;
+package com.demo01.Object;
 
 import java.util.Objects;
 
