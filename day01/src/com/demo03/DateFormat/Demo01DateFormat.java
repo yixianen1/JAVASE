@@ -47,6 +47,10 @@ public class Demo01DateFormat {
             Date parse(String source) : 把符合模式的字符串，解析为Date日期
 
             public Date parse(String source) throws ParseException
+            parse方法声明抛出了ParseException解析异常
+            调用parse方法就必须处理这个异常：鼠标放到有异常的位置 alt+回车-->选择throws或者try...catch
+                1.继续声明抛出给方法的调用处理（throws）
+                2.自己处理这个异常（try...catch）
 
      */
     private static void show02() {
@@ -55,6 +59,7 @@ public class Demo01DateFormat {
         //2.调用SimpleDateFormat对象中的方法parse，把符合模式的字符串，解析为Date日期
         try {
             Date date = sdf.parse("2019-11-03 11:39:25");
+            System.out.println(date);
         } catch (ParseException e) {
             e.printStackTrace();
         }
