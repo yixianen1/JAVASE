@@ -26,21 +26,21 @@ public class Demo03Test {
         System.out.println("请输入一个字符串:");
         String s = new Scanner(System.in).next();
         //2.定义一个HashMap集合key存储每种字符,value存储字符个数
-        HashMap<Character,Integer> map = new HashMap<>();
+        HashMap<Character, Integer> map = new HashMap<>();
         //3.遍历字符串,获取字符串中的每一个字符
-        for(int i=0; i<s.length(); i++){
+        for (int i = 0; i < s.length(); i++) {
             char key = s.charAt(i);
             //4.使用获取到字符,根据Map集合的方法containsKey,判断Map集合中是否包含指定的字符
-            if(map.containsKey(key)){
+            if (map.containsKey(key)) {
                 //true:字符存在
                 //a.使用Map集合中的get方法,根据key获取value(字符个数)
                 Integer value = map.get(key);
                 //b.value++
                 //c.put(字符,value)
-                map.put(key,++value);
-            }else{
+                map.put(key, ++value);
+            } else {
                 //false:字符不存在 put(字符,1)
-                map.put(key,1);
+                map.put(key, 1);
             }
         }
         //5.遍历集合,查看结果
