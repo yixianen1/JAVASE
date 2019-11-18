@@ -67,7 +67,7 @@ long s = System.currentTimeMillis();
 ​	bu.append("a").append("b").append("c");
 
 ##### 能够说出8种基本类型对应的包装类名称
-  
+
 ###### 	 基本的数据类型:4类8种
 
 ​	    
