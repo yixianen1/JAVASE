@@ -77,7 +77,7 @@ public class Demo01Collection {
         */
         boolean b3 = coll.contains("王五");
         System.out.println(b3);//true
-        System.out.println(b3);//true
+
 
         //public int size() : 返回集合中元素的个数。
         System.out.println(coll.size());//5
