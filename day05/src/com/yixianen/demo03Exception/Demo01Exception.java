@@ -62,14 +62,14 @@ public class Demo01Exception {
              弊端:
                 多个异常只能有一种处理方式
          */
-        try{
-            int[] arr = {1,2,3};
+        try {
+            int[] arr = {1, 2, 3};
             System.out.println(arr[7]);
 
             ArrayList<Integer> list = new ArrayList<>();
             list.add(1);
             System.out.println(list.get(10));
-        }catch (IndexOutOfBoundsException e){
+        } catch (IndexOutOfBoundsException e) {
             System.out.println(e);
         }
 

@@ -37,7 +37,7 @@ public class Demo05Throws {
     /*
         定义一个方法,对传递的文件路径进行合法性判断
      */
-    public static void checkFilePath(String fileName) throws FileNotFoundException,IOException{
+    public static void checkFilePath(String fileName) throws FileNotFoundException, IOException {
         /*
             对文件路径进行判断,判断路径是否是d:\\a.txt
             如果路径不是d:\\a.txt,那么我们就抛出异常对象
@@ -52,7 +52,7 @@ public class Demo05Throws {
             不是.txt结尾,那么我们就抛出异常对象
             告之方法的调用者,文件的后缀不对
          */
-        if(!fileName.endsWith(".txt")){
+        if (!fileName.endsWith(".txt")) {
             throw new IOException("文件的后缀不对");
         }
 

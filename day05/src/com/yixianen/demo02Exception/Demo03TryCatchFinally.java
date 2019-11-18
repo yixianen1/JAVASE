@@ -14,7 +14,7 @@ package com.yixianen.demo02Exception;
         catch(异常类的数据类型 变量名){
             异常的处理逻辑(随意编写)
         }finally{
-            无论是否异常,都会执行的代码,一把用于资源释放(IO)
+            无论是否异常,都会执行的代码,一般用于资源释放(IO)
         }
  */
 public class Demo03TryCatchFinally {
@@ -27,7 +27,7 @@ public class Demo03TryCatchFinally {
             //异常的处理逻辑
             e.printStackTrace();
         } finally {
-            System.out.println("无论是否异常,都会执行的代码,一把用于资源释放(IO)");
+            System.out.println("无论是否异常,都会执行的代码,一般用于资源释放(IO)");
         }*/
 
 
@@ -36,7 +36,7 @@ public class Demo03TryCatchFinally {
             throw new Exception("我是一个编译期异常");
             //System.out.println("1");
         } finally {
-            System.out.println("无论是否异常,都会执行的代码,一把用于资源释放(IO)");
+            System.out.println("无论是否异常,都会执行的代码,一般用于资源释放(IO)");
         }
     }
 }

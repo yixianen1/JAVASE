@@ -20,8 +20,8 @@ public class Demo02TryCatch {
             //System.out.println(e.toString());//java.io.FileNotFoundException: 传递的路径不正确
             /*
                 java.io.FileNotFoundException: 传递的路径不正确
-                at com.itheima.demo02.Exception.Demo02TryCatch.checkFilePath(Demo02TryCatch.java:37)
-                at com.itheima.demo02.Exception.Demo02TryCatch.main(Demo02TryCatch.java:15)
+                at com.yixainen.demo02.Exception.Demo02TryCatch.checkFilePath(Demo02TryCatch.java:37)
+                at com.yixianen.demo02.Exception.Demo02TryCatch.main(Demo02TryCatch.java:15)
              */
             e.printStackTrace();
         }
@@ -38,7 +38,7 @@ public class Demo02TryCatch {
             如果路径不是d:\\a.txt,那么我们就抛出异常对象
             告之方法的调用者,传递的路径不正确
          */
-        if(!"d:\\a.txt".equals(fileName)){
+        if (!"d:\\a.txt".equals(fileName)) {
             throw new FileNotFoundException("传递的路径不正确");
         }
 
