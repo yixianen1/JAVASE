@@ -28,7 +28,7 @@ public class Demo01Test {
         //1. 第一个队伍只要名字为3个字的成员姓名；存储到一个新集合中
         List<String> one1 = new ArrayList<>();
         for (String name : one) {
-            if(name.length()==3){
+            if (name.length() == 3) {
                 one1.add(name);
             }
         }
@@ -52,7 +52,7 @@ public class Demo01Test {
         //3. 第二个队伍只要姓张的成员姓名；存储到一个新集合中
         List<String> two1 = new ArrayList<>();
         for (String name : two) {
-            if(name.startsWith("张")){
+            if (name.startsWith("张")) {
                 two1.add(name);
             }
         }
