@@ -20,12 +20,12 @@ public class Demo02Recurtion {
         递归的目的:获取下一个被加的数字(n-1)
         递归结束的条件:获取1的时候结束
      */
-    public static int getSum(int n){//100,99,98...1
+    public static int getSum(int n) {//100,99,98...1
         //递归结束的条件:获取1的时候结束
-        if(n==1){
+        if (n == 1) {
             return 1;
         }
         //递归的目的:获取下一个被加的数字(n-1)
-        return n+getSum(n-1);
+        return n + getSum(n - 1);
     }
 }

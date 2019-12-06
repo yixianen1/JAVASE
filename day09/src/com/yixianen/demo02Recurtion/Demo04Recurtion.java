@@ -19,7 +19,7 @@ import java.io.File;
  */
 public class Demo04Recurtion {
     public static void main(String[] args) {
-        File dir = new File("d:\\aaa");
+        File dir = new File("E:\\WorkSpeace");
         getAllFile(dir);
     }
 
